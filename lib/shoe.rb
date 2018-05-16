@@ -6,10 +6,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-    BRANDS.each do |word|
-      puts word
-    end
+    BRANDS << brand unless BRANDS.include?(brand)
+
   end
 
   def cobble
