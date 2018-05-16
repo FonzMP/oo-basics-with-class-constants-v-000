@@ -8,7 +8,7 @@ class Shoe
     @brand = brand
     BRANDS << brand
     BRANDS.each do |word|
-      puts words
+      puts word
     end
   end
 
